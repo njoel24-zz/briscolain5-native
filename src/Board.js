@@ -1,16 +1,16 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import Players from './Players'
-import Common from './Common'
-import Me from './Me' 
-import { View, Text } from 'react-native';
+import React from 'react';
+import { connect } from 'react-redux';
+import Players from './Players';
+import Common from './Common';
+import Me from './Me';
+import { View } from 'react-native';
 
 import { initMatch,  setWinner,  endTurn,
-		changeTurn, play} from '../src/actions/match'
+		changeTurn, play} from '../src/engine/actions/match';
 import {  
 	 playAuction,
 	 choosePartner, 
-	 changeTurnAuction } from '../src/actions/auction'
+	 changeTurnAuction } from '../src/engine/actions/auction';
 
 class Board extends React.Component {
 	

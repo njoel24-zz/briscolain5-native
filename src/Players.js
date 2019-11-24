@@ -1,6 +1,7 @@
-import React from 'react'
-import { connect } from 'react-redux'
+import React from 'react';
+import { connect } from 'react-redux';
 import { View, Text, StyleSheet, Image } from 'react-native';
+
 class Players extends React.Component {
 
 render () {

@@ -1,8 +1,8 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { startMatch } from '../src/actions/match'
-import { playAuction, exitAuction, raiseAuction } from '../src/actions/auction'
+import React from 'react';
+import { connect } from 'react-redux';
 import { View,Button, Image, StyleSheet, Text } from 'react-native';
+import { startMatch } from '../src/engine/actions/match';
+import { playAuction, exitAuction, raiseAuction } from '../src/engine/actions/auction';
 
 class Common extends React.Component {
 

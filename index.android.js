@@ -6,22 +6,13 @@
 
 import React from 'react';
 import { AppRegistry } from 'react-native';
+import { Provider } from 'react-redux';
+import { applyMiddleware, createStore } from 'redux';
 
-// actions
-import { initMatch } from './src/actions/match'
-
-// redux/react
-import { Provider } from 'react-redux'
-
-// app
-import App from './src-native/App'
-
-// reducers
-import { applyMiddleware, createStore } from 'redux'
-import matchReducer from './src/reducers/match'
-
-// middlewares
-import matchMiddleware from './src/middlewares/MatchMiddleware'
+import App from './src/App';
+import matchReducer from './src/engine/reducers/match';
+import { initMatch } from './src/engine/actions/match';
+import matchMiddleware from './src/engine/middlewares/MatchMiddleware';
 
 const middlewares = applyMiddleware(matchMiddleware);
 const store = createStore(matchReducer, middlewares);

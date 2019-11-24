@@ -1,8 +1,7 @@
-import React from 'react'
-import { connect } from 'react-redux'
-import { View, Text, Image, StyleSheet, Dimensions ,Animated,
-	Easing, TouchableHighlight } from 'react-native';
-	import { play } from '../src/actions/match'
+import React from 'react';
+import { connect } from 'react-redux';
+import { View, Image, StyleSheet, Dimensions ,Animated,TouchableHighlight } from 'react-native';
+import { play } from '../src/engine/actions/match';
 
 class Me extends React.Component {
 
