@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/src/engine/*
+/typings/*
+npm-debug.log
+firebase*
+.firebaserc
+hosting*
